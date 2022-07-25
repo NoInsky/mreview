@@ -1,6 +1,7 @@
 package org.zerock.mreview.dto;
 
 import java.util.List;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 import lombok.AllArgsConstructor;
@@ -19,4 +20,10 @@ public class MovieDTO {
 
     @Builder.Default
     private List<MovieImageDTO> imageDTOList = new ArrayList<>();
+
+    private double avg;
+
+    private int reviewCnt;
+    private LocalDateTime regDate;
+    private LocalDateTime modDate;
 }
